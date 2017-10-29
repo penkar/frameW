@@ -1,10 +1,10 @@
 import * as utilities from './utilities.js'
 
-export const ce = (ele, {styles = null, children = null, classList = '', text = ''} = {}) => {
+export const ce = (ele, {style = null, children = null, sClass = '', text = ''} = {}) => {
   let html = document.createElement(ele);
-  if(styles) setStyle(html, styles);
+  if(style) setStyle(html, style);
   if(children) appender(html, children);
-  if(classList) classset(html, classList)
+  if(sClass) classset(html, sClass)
   if(text) innertext(html, text)
 
   return html;

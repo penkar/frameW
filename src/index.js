@@ -1,14 +1,11 @@
 import {ce, setStyle, fin} from './source'
 
+import {Article} from './execution'
+import {Sample} from './static'
+
 const runner = (hook) => {
-  let div = ce('div', {
-    styles: {backgroundColor:'red'},
-    text:'hello',
-    children:[
-      ce('span'),
-      ce('img'),
-    ],
-  });
+  console.log(Sample)
+  let div = Article(Sample[0])
 
   fin(div);
 }
