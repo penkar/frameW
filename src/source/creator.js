@@ -1,13 +1,24 @@
 import * as utilities from './utilities.js'
 
-export const ce = (ele, {style = null, children = null, sClass = '', text = ''} = {}) => {
+export const ce = (ele, {style = null, children = null, sClass = '', text = '', attr = '', href = ''} = {}) => {
+  console.log(href);
   let html = document.createElement(ele);
   if(style) setStyle(html, style);
   if(children) appender(html, children);
   if(sClass) classset(html, sClass);
   if(text) innertext(html, text);
+  if(href) innerhref(html, href);
+  if(attr) innerattr(html, attr);
 
   return html;
+}
+
+export const innerhref = (ele, text) => {
+  return ele.href = text;
+}
+
+export const innerattr = (ele, text) => {
+  return ele.innerText = text;
 }
 
 export const setStyle = (element, styleObject) => {
