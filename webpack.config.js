@@ -25,7 +25,12 @@ module.exports = {
        query: {
          presets: ['es2015', 'stage-0']
        },
+
      }
+   },{
+     test:/\.css$/,
+     exclude:/(node_modules)/,
+     use: ['style-loader', 'css-loader'],
    }]
  },
  devtool: 'source-map',
