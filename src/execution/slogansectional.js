@@ -1,7 +1,7 @@
 import {ce} from '../source';
 
 export function SloganSectional() {
-  let html = ce('div', {
+  return ce('div', {
     sClass:'slogan-sectional',
     children:[
       ce('a', {sClass:'slogan-text', href:'#', text:'Not the Washington Post'}),
@@ -26,6 +26,5 @@ export function SloganSectional() {
       }),
       ce('hr', {sClass:'medium-divider'}),
     ]
-  })
-  return html
+  });
 }

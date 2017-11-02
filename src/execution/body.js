@@ -5,19 +5,12 @@ import {RecentStories} from './recentstories';
 import {SloganSectional} from './slogansectional';
 
 export const Body = (sampleArray) => {
-  return (
-    ce('div', {
-      sClass:'app-body',
-      children: [
-        SloganSectional(),
-        RecentStories(sampleArray),
-        ce('div', {
-          sClass:'home-page-body',
-          children: [
-            HomePageBody(sampleArray),
-          ]
-        })
-      ]
-    })
-  )
+  return ce('div', {
+    sClass:'app-body',
+    children: [
+      SloganSectional(),
+      RecentStories(sampleArray),
+      HomePageBody(sampleArray),
+    ]
+  });
 }

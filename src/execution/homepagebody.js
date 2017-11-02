@@ -15,24 +15,26 @@ export const HomePageBody = (sampleArray) => {
     }
   }
 
-  return (
-    ce('div', {
-      sClass:'home-page-body',
-      children: [
-        ce('div', {
-          sClass:'home-page-body-col',
-          children:col0,
-        }),
-        ce('div', {
-          sClass:'home-page-body-col',
-          children:col1,
-        }),
-        ce('div', {
-          sClass:'home-page-body-col',
-          children:col2,
-        }),
-
-      ]
-    })
-  )
+  return ce('div', {
+    sClass:'home-page-body',
+    children:[
+      ce('div', {
+        sClass:'home-page-body',
+        children: [
+          ce('div', {
+            sClass:'home-page-body-col',
+            children:col0,
+          }),
+          ce('div', {
+            sClass:'home-page-body-col',
+            children:col1,
+          }),
+          ce('div', {
+            sClass:'home-page-body-col',
+            children:col2,
+          }),
+        ]
+      })
+    ]
+  });
 }

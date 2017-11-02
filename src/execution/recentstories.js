@@ -7,10 +7,9 @@ export function RecentStories(sampleArray) {
       sClass:'recent-sectional-title',
       children:[ ce('a', {text:item.title, href:`#${item.id}`}) ]
     }));
-  })
-  let html = ce('ul', {
+  });
+  return ce('ul', {
     sClass:'recent-sectional',
     children: array,
-  })
-  return html;
+  });
 }

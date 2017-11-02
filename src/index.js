@@ -1,12 +1,17 @@
-import {ce, setStyle, fin} from './source'
+import {ce, fin} from './source';
+import {Body, HeaderRow} from './execution';
+import {Sample} from './static';
 
-import {Body} from './execution'
-import {Sample} from './static'
+require('./styles.css');
 
 const runner = (hook) => {
-  let div = Body(Sample)
-
-  fin(div);
+  let html = ce('div', {
+    sClass:'app',
+    children:[
+      HeaderRow(),
+      Body(Sample),
+    ],
+  });
+  fin(html);
 }
-
-runner()
+runner();
