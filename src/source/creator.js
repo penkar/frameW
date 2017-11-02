@@ -1,7 +1,6 @@
 import * as utilities from './utilities.js'
 
 export const ce = (ele, {style = null, children = null, sClass = '', text = '', attr = '', href = ''} = {}) => {
-  console.log(href);
   let html = document.createElement(ele);
   if(style) setStyle(html, style);
   if(children) appender(html, children);

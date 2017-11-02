@@ -1,37 +1,22 @@
 import * as sources from '../source';
-import {Article} from './Article'
+import {ce} from '../source';
+import {HomePageBody} from './homepagebody';
+import {RecentStories} from './recentstories';
+import {SloganSectional} from './slogansectional';
 
 export const Body = (sampleArray) => {
-  let {ce} = sources;
-  let col0 = [], col1 = [], col2 = [];
-
-  for(let i = 0; i < sampleArray.length; i++) {
-    if(!(i % 3)) {
-      col0.push(Article(sampleArray[i]));
-    } else if((i % 3) == 1) {
-      col1.push(Article(sampleArray[i]));
-    } else if((i % 3) == 2) {
-      col2.push(Article(sampleArray[i]));
-    }
-  }
-
   return (
     ce('div', {
-      sClass:'home-page-body',
+      sClass:'app-body',
       children: [
+        SloganSectional(),
+        RecentStories(sampleArray),
         ce('div', {
-          sClass:'home-page-body-col',
-          children:col0,
-        }),
-        ce('div', {
-          sClass:'home-page-body-col',
-          children:col1,
-        }),
-        ce('div', {
-          sClass:'home-page-body-col',
-          children:col2,
-        }),
-
+          sClass:'home-page-body',
+          children: [
+            HomePageBody(sampleArray),
+          ]
+        })
       ]
     })
   )
