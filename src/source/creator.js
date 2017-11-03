@@ -1,6 +1,6 @@
 import * as utilities from './utilities.js'
 
-export const ce = (ele, {style = null, children = null, sClass = '', text = '', attr = '', href = ''} = {}) => {
+export const ce = (ele, {style = null, children = null, sClass = '', text = '', attr = '', href = '', id = ''} = {}) => {
   let html = document.createElement(ele);
   if(style) setStyle(html, style);
   if(children) appender(html, children);
@@ -8,8 +8,12 @@ export const ce = (ele, {style = null, children = null, sClass = '', text = '', 
   if(text) innertext(html, text);
   if(href) innerhref(html, href);
   if(attr) innerattr(html, attr);
-
+  if(id) idset(html, id);
   return html;
+}
+
+export const idset = (ele, id) => {
+  return ele.id = id;
 }
 
 export const innerhref = (ele, text) => {
