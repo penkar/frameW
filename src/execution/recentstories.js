@@ -1,5 +1,4 @@
 import {ce} from '../source';
-
 export function RecentStories(sampleArray) {
   let array = [ce('li', {sClass:'label', text:'In the News '})];
   sampleArray.map(function(item) {
@@ -8,8 +7,5 @@ export function RecentStories(sampleArray) {
       children:[ ce('a', {text:item.title, href:`#${item.id}`}) ]
     }));
   });
-  return ce('ul', {
-    sClass:'recent-sectional',
-    children: array,
-  });
+  return ce('ul', {sClass:'recent-sectional', children: array,});
 }
