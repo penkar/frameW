@@ -1,5 +1,5 @@
 import {ce, fin} from './source';
-import {Body, HeaderRow} from './execution';
+import {Body, HeaderRow, TableOfContents} from './execution';
 import {Sample} from './static';
 
 require('./styles.css');
@@ -9,6 +9,7 @@ const runner = (hook) => {
     sClass:'app',
     children:[
       HeaderRow(),
+      TableOfContents(),
       Body(Sample),
     ],
   });
