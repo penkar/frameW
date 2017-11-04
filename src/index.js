@@ -1,4 +1,4 @@
-import {ce, fin} from './source';
+import {ce, fin, hash} from './source';
 import {Body, HeaderRow, TableOfContents} from './execution';
 import {Sample} from './static';
 
@@ -6,13 +6,14 @@ require('./styles.css');
 
 const runner = (hook) => {
   let html = ce({
-    sClass:'app',
+    id:'app',
     children:[
       HeaderRow(),
       TableOfContents(),
-      Body(Sample),
+      Body(Sample, hash()),
     ],
   });
   fin(html);
 }
 runner();
+// window.onhashchange = runner;

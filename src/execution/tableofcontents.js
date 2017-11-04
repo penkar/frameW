@@ -3,9 +3,9 @@ import {Contents} from './contents';
 import {Content} from './content';
 export function TableOfContents() {
   const multiarray = [
-    {text:'Home Page',sClass:'primary',href:''},
-    {text:'US & World',sClass:'secondary',href:'world'},
-    {text:'Regional',sClass:'secondary',href:'regional'},
+    {text:'Home Page',sClass:'primary',href:'#'},
+    {text:'US & World',sClass:'secondary',href:`#${encodeURIComponent(JSON.stringify({section:'world'}))}`},
+    {text:'Regional',sClass:'secondary',href:`#${encodeURIComponent(JSON.stringify({section:'regional'}))}`},
   ].map((i)=> ce({ele:'a', ...i}) );
   const contents = Contents.map((i) => Content(i));
   return ce({

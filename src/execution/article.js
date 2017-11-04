@@ -9,7 +9,7 @@ export const Article = ({title='', author = [], story = [], id = ''}) => {
     ele:'div',
     sClass:'story-teaser-component',
     children: [
-      ce({ele:'a', text:title, sClass:'title', href:`#${id}`}),
+      ce({ele:'a', text:title, sClass:'title', href:'#'+encodeURIComponent(JSON.stringify({id}))}),
       ce({text:(author.join(', ')), sClass:'author'}),
       ...childpara,
     ]

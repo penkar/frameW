@@ -12,4 +12,20 @@ export const ce = ({ele = 'div', style, children = [], sClass, text, href, id, h
   return element;
 }
 
-export const fin = (ele) => document.getElementsByTagName('body')[0].appendChild(ele);
+export const fin = (ele) => {
+  let body = document.getElementsByTagName('body')[0], app = document.getElementById('app');
+  if(app) {
+    body.replaceChild(ele, app);
+  } else {
+    body.appendChild(ele);
+  }
+}
+
+export const hash = () => {
+  let hash = window.location.hash.slice(1,window.location.hash.length);
+  if(hash) {
+    return JSON.parse(decodeURIComponent(hash))
+  } else {
+    return false;
+  }
+}

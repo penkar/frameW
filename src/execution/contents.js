@@ -1,135 +1,135 @@
 const Contents = [{
   text:'Politics',
-  href:'#politics',
+  href:`#${encodeURIComponent(JSON.stringify({section:'politics'}))}`,
   subhrefs: [{
     text:'The White House',
-    href:'#thewhitehouse',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'thewhitehouse'}))}`,
   },{
     text:'Courts and Law',
-    href:'#courtsandlaw',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'courtsandlaw'}))}`,
   },{
     text:'Polling',
-    href:'#polling',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'polling'}))}`,
   },{
     text:'Senate',
-    href:'#senate',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'senate'}))}`,
   },{
     text:'House of Representatives',
-    href:'#houseofrepresentatives',}
-  ],
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'houseofrepresentatives'}))}`,
+  }],
 },{
   text:'Sports',
-  href:'#sports',
+  href:`#${encodeURIComponent(JSON.stringify({section:'sports'}))}`,
   subhrefs: [{
     text:'NFL',
-    href:'#nfl',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'nfl'}))}`,
   },{
     text:'NBA',
-    href:'#nba',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'nba'}))}`,
   },{
     text:'MLB',
-    href:'#mlb',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'mlb'}))}`,
   }],
 },{
   text:'National',
-  href:'#national',
+  href:`#${encodeURIComponent(JSON.stringify({section:'national'}))}`,
   subhrefs:[{
     text:'Education',
-    href:'#education',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'education'}))}`,
   },{
     text:'Investigations',
-    href:'#investigations',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'investigations'}))}`,
   },{
     text:'Obituaries',
-    href:'#obituaries',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'obituaries'}))}`,
   },{
     text:'National Security',
-    href:'#nationalsecurity',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'nationalsecurity'}))}`,
   },{
     text:'Health & Science',
-    href:'#national/healthscience',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'national/healthscience'}))}`,
   },{
     text:'True Crime',
-    href:'#truecrime',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'truecrime'}))}`,
   }]
 },{
   text:'Tech',
-  href:'#tech',
+  href:`#${encodeURIComponent(JSON.stringify({section:'tech'}))}`,
   subhrefs: [{
     text:'Innovation',
-    href:'#innovation',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'innovation'}))}`,
   },{
     text:'Silicon Valley',
-    href:'#siliconvalley',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'siliconvalley'}))}`,
   }],
 },{
   text:'Business',
-  href:'#business',
+  href:`#${encodeURIComponent(JSON.stringify({section:'business'}))}`,
   subhrefs: [{
     text:'On Leadership',
-    href:'#onleadership',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'onleadership'}))}`,
   },{
     text:'Personal Finance',
-    href:'#personalfinance',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'personalfinance'}))}`,
   },{
     text:'Energy and Environment',
-    href:'#energyandenvironment',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'energyandenvironment'}))}`,
   },{
     text:'Markets',
-    href:'#markets',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'markets'}))}`,
   },{
     text:'World Business',
-    href:'#worldbusiness',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'worldbusiness'}))}`,
   },{
     text:'Capital Markets',
-    href:'#capitalmarkets',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'capitalmarkets'}))}`,
   }],
 },{
   text:'Entertainment',
-  href:'#entertainment',
+  href:`#${encodeURIComponent(JSON.stringify({section:'entertainment'}))}`,
   subhrefs: [{
     text:'Books',
-    href:'#books',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'books'}))}`,
   },{
     text:'Comics',
-    href:'#comics',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'comics'}))}`,
   },{
     text:'Television',
-    href:'#television',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'television'}))}`,
   },{
     text:'Movies',
-    href:'#movies',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'movies'}))}`,
   },{
     text:'Museum',
-    href:'#museum',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'museum'}))}`,
   },{
     text:'Music',
-    href:'#music',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'music'}))}`,
   },{
     text:'Theater and Dance',
-    href:'#theateranddance',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'theateranddance'}))}`,
   },{
     text:'Bars / Clubs',
-    href:'#barsclubs',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'barsclubs'}))}`,
   }],
 },{
   text:'Lifestyle',
-  href:'#lifestyle',
+  href:`#${encodeURIComponent(JSON.stringify({section:'lifestyle'}))}`,
   subhrefs: [{
     text:'Food',
-    href:'#food',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'food'}))}`,
   },{
     text:'Travel',
-    href:'#travel',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'travel'}))}`,
   },{
     text:'Wellness',
-    href:'#wellness',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'wellness'}))}`,
   },{
     text:'Fashion',
-    href:'#fashion',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'fashion'}))}`,
   },{
     text:'Home and Garden',
-    href:'#homeandgarden',
+    href:`#${encodeURIComponent(JSON.stringify({subSection:'homeandgarden'}))}`,
   }],
 }]
 
