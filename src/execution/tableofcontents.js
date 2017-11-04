@@ -11,7 +11,7 @@ export function TableOfContents() {
   });
   const contents = Contents.map(function(i){return Content(i);});
   return ce('div', {
-    sClass:'open table-of-contents-component',
+    sClass:'table-of-contents-component',
     id:'TableOfContents',
     children: [
       ce('div', {sClass:'generic-button-component content-component-button primary', text:'Subscribe' }),

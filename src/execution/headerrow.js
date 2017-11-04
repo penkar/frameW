@@ -11,9 +11,7 @@ export function HeaderRow() {
         children:[
           ce('li', {
             children:[
-              ce('a', { href:'#', html:"\u23E3",
-                style:{color:'white', textDecoration:'none', fontSize:'25px'},
-              })
+              ce('a', {href:'#', html:"\u23E3", sClass:'alert',})
             ]
           })
         ]

@@ -6,6 +6,7 @@ import {SloganSectional} from './slogansectional';
 export const Body = (sampleArray) => {
   return ce('div', {
     sClass:'app-body',
+    id:'app-body',
     children: [ SloganSectional(), RecentStories(sampleArray), HomePageBody(sampleArray), ]
   });
 }
