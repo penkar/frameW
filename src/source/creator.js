@@ -1,4 +1,4 @@
-export const ce = (ele, {style, children = [], sClass, text, href, id, html, callbacks} = {}) => {
+export const ce = ({ele = 'div', style, children = [], sClass, text, href, id, html, callbacks} = {}) => {
   if(!ele) return null;
   let element = document.createElement(ele);
   for(var i in style) { element.style[i] = style[i]; };

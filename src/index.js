@@ -5,7 +5,7 @@ import {Sample} from './static';
 require('./styles.css');
 
 const runner = (hook) => {
-  let html = ce('div', {
+  let html = ce({
     sClass:'app',
     children:[
       HeaderRow(),

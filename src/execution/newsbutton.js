@@ -9,7 +9,7 @@ export function NewsButton () {
     }
   }
   return [
-    ce('div', {sClass:'news-button spyglass', children:[ce('div', {html:'\u26B2'})]}),
-    ce('div', {sClass:'news-button', html:'Sections &#9776;', callbacks:{click}}),
+    ce({sClass:'news-button spyglass', children:[ce({html:'\u26B2'})]}),
+    ce({sClass:'news-button', html:'Sections &#9776;', callbacks:{click}}),
   ]
 }
