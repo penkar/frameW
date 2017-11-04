@@ -79,6 +79,7 @@ margin: 0px; }
 #header-row .news-link-ul .news-link-li {
   margin-right: 8px; }
   #header-row .news-link-ul .news-link-li a {
+    text-transform: capitalize;
     font-size: 0.8rem;
     text-decoration: none;
     color: #d5d5d5; }

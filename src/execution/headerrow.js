@@ -1,4 +1,6 @@
 import {ce} from '../source'
+import {NewsLinkLi} from './newslinkli'
+import {NewsButton} from './newsbutton'
 
 export function HeaderRow() {
   return ce('div', {
@@ -6,13 +8,22 @@ export function HeaderRow() {
     children:[
       ce('ul', {
         sClass:'news-link-ul',
-        children:[]
+        children:[
+          ...NewsButton(),
+          ...NewsLinkLi(),
+        ],
       }),
       ce('ul', {
         sClass:'news-link-ul',
         children:[
           ce('li', {
-            text:"\u1F514",
+            children:[
+              ce('a', {
+                style:{color:'white', textDecoration:'none', fontSize:'25px'},
+                href:'#',
+                html:"\u23E3",
+              })
+            ]
           })
         ]
       }),
