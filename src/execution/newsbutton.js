@@ -1,6 +1,6 @@
 import {ce} from '../source';
 export function NewsButton () {
-  let click = function(){
+  let click = () => {
     let body = document.getElementById('app-body'), toc = document.getElementById('TableOfContents');
     if(body.className.indexOf('tableofcontents') === -1) {
       body.className = 'app-body tableofcontents', toc.className = 'open table-of-contents-component';

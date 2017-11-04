@@ -1,11 +1,8 @@
 import {ce} from '../source';
 export function RecentStories(sampleArray) {
-  let array = [ce('li', {sClass:'label', text:'In the News '})];
-  sampleArray.map(function(item) {
-    array.push(ce('li', {
-      sClass:'recent-sectional-title',
-      children:[ ce('a', {text:item.title, href:`#${item.id}`}) ]
-    }));
-  });
-  return ce('ul', {sClass:'recent-sectional', children: array,});
+  let arr = sampleArray.map((item) => ce('li', {
+    sClass:'recent-sectional-title',
+    children:[ ce('a', {text:item.title, href:`#${item.id}`}) ]
+  }) );
+  return ce('ul', {sClass:'recent-sectional', children: [ce('li', {sClass:'label', text:'In the News '}), ...arr],});
 }

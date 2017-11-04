@@ -12,7 +12,4 @@ export const ce = (ele, {style, children = [], sClass, text, href, id, html, cal
   return element;
 }
 
-export function fin(ele) {
-  let doc = document.getElementsByTagName('body')[0];
-  doc.appendChild(ele);
-}
+export const fin = (ele) => document.getElementsByTagName('body')[0].appendChild(ele);

@@ -6,10 +6,8 @@ export function TableOfContents() {
     {text:'Home Page',sClass:'primary',href:''},
     {text:'US & World',sClass:'secondary',href:'world'},
     {text:'Regional',sClass:'secondary',href:'regional'},
-  ].map(function(i){
-    return(ce('a', i));
-  });
-  const contents = Contents.map(function(i){return Content(i);});
+  ].map((i)=> ce('a', i) );
+  const contents = Contents.map((i) => Content(i));
   return ce('div', {
     sClass:'table-of-contents-component',
     id:'TableOfContents',
