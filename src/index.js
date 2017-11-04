@@ -16,4 +16,3 @@ const runner = (hook) => {
   fin(html);
 }
 runner();
-// window.onhashchange = runner;

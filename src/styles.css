@@ -136,7 +136,7 @@ flex-direction: column; }
 -webkit-transition: left 2s, background-color 2s, -webkit-transform 2s;
 transition: left 1s, background-color 2s, transform 2s;
 left: 4vw; }
-.app-body.tableofcontents {
+.toc .app-body {
 left: 341px; }
 
 .thin-shadow {
@@ -201,7 +201,7 @@ overflow: auto;
 background-color: #2a2a2a;
 padding: 12px 0px;
 transition: left 1s, background-color 1s, transform 1s; }
-.table-of-contents-component.open {
+.toc .table-of-contents-component {
 left: 0px; }
 .table-of-contents-component > hr {
 border: solid rgba(255, 255, 255, 0.22) 1px; }

@@ -1,11 +1,11 @@
 import {ce} from '../source';
 export function NewsButton () {
   let click = () => {
-    let body = document.getElementById('app-body'), toc = document.getElementById('TableOfContents');
-    if(body.className.indexOf('tableofcontents') === -1) {
-      body.className = 'app-body tableofcontents', toc.className = 'open table-of-contents-component';
+    let body = document.getElementById('app');
+    if(body.className.indexOf('toc') === -1) {
+      body.className = 'toc';
     } else {
-      body.className = 'app-body', toc.className = 'table-of-contents-component';
+      body.className = '';
     }
   }
   return [
