@@ -215,6 +215,13 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 min-height: 1rem; }
+.table-of-contents-component .content-component > .angle {
+transform:rotate(-135deg);}
+.table-of-contents-component .content-component > .angle:after {
+content:"\221F";}
+.table-of-contents-component .content-component > .label {
+  color:white;
+  text-decoration: none;}
 .table-of-contents-component .content-component > .label, .table-of-contents-component .content-component .right-arrow {
   font-size: 14px; }
 .table-of-contents-component .content-component > .subcontents-component {

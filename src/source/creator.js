@@ -1,8 +1,9 @@
 import * as utilities from './utilities.js'
 export const ce = (ele, {style, children = [], sClass, text, href, id, html} = {}) => {
+  if(!ele) return null;
   let element = document.createElement(ele);
   for(var i in style) { element.style[i] = style[i]; };
-  for(var child of children) { element.appendChild(child); };
+  for(var child of children) { child && element.appendChild(child); };
   if(sClass) element.className = sClass;
   if(text) element.innerText = text;
   if(href) element.href = href;

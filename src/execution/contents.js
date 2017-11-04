@@ -1,6 +1,6 @@
 const Contents = [{
   text:'Politics',
-  href:'/politics',
+  href:'#politics',
   subhrefs: [{
     text:'The White House',
     href:'#thewhitehouse',
@@ -19,7 +19,7 @@ const Contents = [{
   ],
 },{
   text:'Sports',
-  href:'/sports',
+  href:'#sports',
   subhrefs: [{
     text:'NFL',
     href:'#nfl',
@@ -31,12 +31,8 @@ const Contents = [{
     href:'#mlb',
   }],
 },{
-  text:'News Letter',
-  href:'/newsletter',
-  subhrefs:[],
-},{
   text:'National',
-  href:'/national',
+  href:'#national',
   subhrefs:[{
     text:'Education',
     href:'#education',
@@ -51,14 +47,14 @@ const Contents = [{
     href:'#nationalsecurity',
   },{
     text:'Health & Science',
-    href:'/national/healthscience',
+    href:'#national/healthscience',
   },{
     text:'True Crime',
     href:'#truecrime',
   }]
 },{
   text:'Tech',
-  href:'/tech',
+  href:'#tech',
   subhrefs: [{
     text:'Innovation',
     href:'#innovation',
@@ -68,7 +64,7 @@ const Contents = [{
   }],
 },{
   text:'Business',
-  href:'/business',
+  href:'#business',
   subhrefs: [{
     text:'On Leadership',
     href:'#onleadership',
@@ -90,7 +86,7 @@ const Contents = [{
   }],
 },{
   text:'Entertainment',
-  href:'/entertainment',
+  href:'#entertainment',
   subhrefs: [{
     text:'Books',
     href:'#books',
@@ -118,7 +114,7 @@ const Contents = [{
   }],
 },{
   text:'Lifestyle',
-  href:'/lifestyle',
+  href:'#lifestyle',
   subhrefs: [{
     text:'Food',
     href:'#food',
