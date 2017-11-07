@@ -17,15 +17,10 @@ export const HomePageBody = (sampleArray, hash) => {
   }
   return ce({
     sClass:'home-page-body',
-    children:[
-      ce({
-        sClass:'home-page-body',
-        children: [
-          ce({sClass:'home-page-body-col',children:col0,}),
-          ce({sClass:'home-page-body-col',children:col1,}),
-          ce({sClass:'home-page-body-col',children:col2,}),
-        ]
-      })
+    children: [
+      ce({sClass:'home-page-body-col',children:col0,}),
+      ce({sClass:'home-page-body-col',children:col1,}),
+      ce({sClass:'home-page-body-col',children:col2,}),
     ]
-  });
+  })
 }
