@@ -1,6 +1,6 @@
-import {ce} from '../source';
+import {ce, hash} from '../source';
 import {HomePageBody, RecentStories, SloganSectional} from './index';
-export const Body = (sampleArray, hash) => ce({
+export const Body = (sampleArray) => ce({
   sClass:'app-body', id:'app-body',
-  children: [ SloganSectional(), !hash && RecentStories(sampleArray), HomePageBody(sampleArray, hash), ]
+  children: [ SloganSectional(), RecentStories(sampleArray), HomePageBody(sampleArray), ]
 });

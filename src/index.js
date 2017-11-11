@@ -10,7 +10,7 @@ const runner = (hook) => {
     children:[
       HeaderRow(),
       TableOfContents(),
-      Body(Sample, hash()),
+      Body(Sample),
     ],
   });
   fin(html);
