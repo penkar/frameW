@@ -1,10 +1,18 @@
 import {ce} from '../source';
 export const Article = ({title='', author = [], story = [], id = ''}, main = false) => {
-  let childpara = [];
-  for(let i = 0; i < Math.min(3, story.length); i++) {
-    let art = story[i];
-    childpara.push(ce({ele:'span', ...art}));
+  let childpara = [], count = 0, i = 0;
+  if(main) {
+    story.forEach((art) => {
+      childpara.push(ce({ele:'span', ...art}));
+    });
+  } else {
+    while(count < 1000) {
+      let art = story[i];
+      childpara.push(ce({ele:'span', ...art}));
+      i++, count += art.text.length;
+    }
   }
+
   return ce({
     ele:'div',
     sClass:`story-teaser-component${main ? ' main-article-component' : ''}`,

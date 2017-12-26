@@ -1,12 +1,11 @@
 import {ce, hashChanger, hash} from '../source';
-import {Article} from './Article'
+import {Article} from './article'
 export const HomePageBody = (sampleArray) => {
   hashChanger(()=> {
     let parent = document.getElementsByClassName('app-body')[0];
     parent.removeChild(parent.children[2]);
     parent.appendChild(ultimateCallback())
   });
-window.sam = sampleArray
 
   const ultimateCallback = () => {
     let hashObj = hash(), children = [];
@@ -35,11 +34,10 @@ window.sam = sampleArray
       ]
     } else if(hashObj.id) {
       let main = sampleArray.find((article)=>(hashObj.id === article.id));
-      children = [ Article(main, true) ]
+      children = [ Article(main, true) ];
     } else {
       children = [];
     }
-
 
     return ce({
       sClass:'home-page-body',
