@@ -1,0 +1,92 @@
+html, body {
+  overflow-x:hidden;
+  font-family: sans-serif;
+  border: 0px;
+  margin: 0px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+* {
+transition-timing-function: ease-in;
+transition: 0.75s; }
+
+.home-page-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.home-page-body .home-page-body-col {
+flex-basis: 0;
+flex-grow: 1;
+flex-direction: column; }
+.home-page-body .home-page-body-col + .home-page-body-col .story-teaser-component {
+border-left: 1px solid rgba(0, 0, 0, 0.33); }
+.home-page-body .story-teaser-component + .story-teaser-component {
+border-top: 1px solid rgba(0, 0, 0, 0.33); }
+.home-page-body .story-teaser-component {
+text-align: left;
+padding: 1rem;
+display: flex;
+flex-direction: column; }
+.home-page-body .story-teaser-component > * {
+  margin-bottom: 6px;
+  margin-top: 6px;
+  font-size: 12px; }
+.home-page-body .story-teaser-component .title {
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 800;
+  font-style: italic;
+  font-family: serif; }
+.home-page-body .story-teaser-component .author {
+  font-size: 0.74rem;
+  color: gray;
+  text-transform: capitalize;
+  font-weight: 800; }
+  .home-page-body .story-teaser-component .author:before {
+    content: 'By: '; }
+.home-page-body .story-teaser-component .list-story-element {
+  margin: 4px 0px 4px 0px; }
+
+.app-body {
+-webkit-transition: left 2s, background-color 2s, -webkit-transform 2s;
+transition: left 1s, background-color 2s, transform 2s;
+left: 4vw; }
+.toc .app-body {
+left: 341px; }
+
+.thin-shadow {
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.75);
+}
+
+.recent-sectional {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow: hidden;
+  line-height: 24px;
+  font-size: 14px;
+  word-wrap: break-word;
+  padding: 0px;
+  margin: 0px;
+  li {
+    white-space: nowrap;
+    list-style: none;
+    margin-right: 8px;
+  }
+  .label {
+    color: #B03436;
+  }
+  .recent-sectional-title a {
+    color: black;
+    text-decoration: none;
+  }
+  .recent-sectional-title a:hover {
+    color: #B03436;
+  }
+}

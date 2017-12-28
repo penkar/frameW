@@ -1,0 +1,40 @@
+#app {
+  width: 92vw;
+  display: flex;
+}
+
+hr {
+  &.medium-divider {
+    border: solid 1.5px black;
+  }
+  &.thin-divider {
+    border: solid 1.5px black;
+  }
+}
+
+.app-body {
+position: absolute;
+top: 68px;
+width: 92vw;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+text-align: center; }
+
+.generic-button-component {
+  border-radius: 4px;
+  text-align: center;
+  padding: 8px 4px;
+  margin: 8px 4px;
+  font-size: small;
+  &.full {
+  width: calc(100% - 80px);
+  }
+  &.primary {
+  color: white;
+  background-color: #1955a5;
+  }
+  &.primary:hover {
+    background-color: #3d73d5;
+  }
+}

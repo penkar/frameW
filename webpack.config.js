@@ -28,9 +28,9 @@ module.exports = {
 
      }
    },{
-     test:/\.css$/,
+     test:/(\.scss|\.css$)/,
      exclude:/(node_modules)/,
-     use: ['style-loader', 'css-loader'],
+     use: ['style-loader','css-loader','sass-loader'],
    }]
  },
  devtool: 'source-map',
