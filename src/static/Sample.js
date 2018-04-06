@@ -48,6 +48,10 @@ const Sample = [{
     text:'Source',
     href:`https://www.quora.com/Why-do-so-many-people-feel-that-the-Chinese-cant-possibly-be-OK-with-their-government-or-society-It-seems-that-many-in-West-deem-the-current-Chinese-government-society-as-wrong-and-that-any-right-thinking-person-would-agree-and-join-in-the-fight/answer/Kaiser-Kuo?share=5dde82d7&srid=hUFJ`,
   },{
+    ele:`img`,
+    src:`https://thumbs.dreamstime.com/z/raindrop-over-vintage-background-illustration-31037424.jpg`,
+    style:{'max-width':'15%'},
+  },{
     ele:`a`,
     text:'Original',
     href:`https://np.reddit.com/r/geopolitics/comments/7lo7fu/why_is_there_no_mass_demand_in_china_for/dro5z82/`,

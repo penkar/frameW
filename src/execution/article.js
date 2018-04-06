@@ -8,8 +8,11 @@ export const Article = ({title='', author = [], story = [], id = ''}, main = fal
   } else {
     while(count < 1000) {
       let art = story[i];
-      childpara.push(ce({ele:'span', ...art}));
-      i++, count += art.text.length;
+      if(art.text) {
+        childpara.push(ce({ele:'span', ...art}));
+        count += art.text.length;
+      }
+      i++;
     }
   }
 

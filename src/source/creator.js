@@ -1,4 +1,6 @@
-export const ce = ({ele = 'div', style, children = [], sClass, text, href, id, html, callbacks} = {}) => {
+import checkKey from './utilities';
+
+export const ce = ({ele = 'div', style, children = [], sClass, text, href, id, html, callbacks, src} = {}) => {
   if(!ele) return null;
   let element = document.createElement(ele);
   for(var i in style) { element.style[i] = style[i]; };
@@ -9,6 +11,7 @@ export const ce = ({ele = 'div', style, children = [], sClass, text, href, id, h
   if(href) element.href = href;
   if(id) element.id = id;
   if(html) element.innerHTML = html;
+  if(src) element.src = src;
   return element;
 }
 
