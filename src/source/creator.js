@@ -1,26 +1,22 @@
 import checkKey from './utilities';
 
-export const ce = ({ele = 'div', style, children = [], sClass, text, href, id, html, callbacks, src} = {}) => {
+export const ce = ({ele = 'div', style, children = [], sClass, text, href, id, html, callbacks, src} = {}, renderPoint = null) => {
   if(!ele) return null;
-  let element = document.createElement(ele);
-  for(var i in style) { element.style[i] = style[i]; };
-  for(var j in callbacks) { element.addEventListener(j, callbacks[j]); };
-  for(var child of children) { child && element.appendChild(child); };
+  const element = document.createElement(ele);
+  for(let i in style) { element.style[i] = style[i]; };
+  for(let j in callbacks) { element.addEventListener(j, callbacks[j]); };
+  for(let child of children) { child && element.appendChild(child); };
   if(sClass) element.className = sClass;
   if(text) element.innerText = text;
   if(href) element.href = href;
   if(id) element.id = id;
   if(html) element.innerHTML = html;
   if(src) element.src = src;
-  return element;
-}
 
-export const fin = (ele) => {
-  let body = document.getElementsByTagName('body')[0], app = document.getElementById('app');
-  if(app) {
-    body.replaceChild(ele, app);
+  if(renderPoint) {
+    return renderPoint.appendChild(element);
   } else {
-    body.appendChild(ele);
+    return element;
   }
 }
 

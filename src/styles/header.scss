@@ -12,6 +12,22 @@
   justify-content: space-between;
   z-index: 5000;
 
+  &.input-search .news-button.spyglass {
+    width: 15rem;
+    background-color: lightgray;
+    >div {
+      color: black;
+    }
+    .input-search{
+      opacity: 0.5;
+      display: inherit;
+      width: 13rem;
+      border: 0px;
+      background-color: transparent;
+      border-bottom: 1px solid black;
+    }
+  }
+
   .news-button {
     background-color: #1f1f1f;
     border: 0.5px solid #444;
@@ -23,9 +39,26 @@
   .news-button.spyglass {
     font-size:17px;
     padding:4px 10px;
+    display: flex;
+    flex-direction: row;
+    width: 10px;
+    justify-content: space-between;
+    >div {
+      cursor: pointer;
+    }
+
+    .input-search {
+      opacity: 1.0;
+      display: none;
+      width: 1rem;
+    }
   }
   .news-button.spyglass div {
     transform:rotate(-45deg);
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 10px;
   }
   .news-button:hover {
     border-color: white;

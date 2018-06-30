@@ -44,5 +44,5 @@ export const HomePageBody = (sampleArray) => {
       children,
     })
   }
-  return ultimateCallback()
+  return ultimateCallback();
 }
